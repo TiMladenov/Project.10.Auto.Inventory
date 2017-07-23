@@ -1,0 +1,95 @@
+<resources>
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="GenericButtonStyle" parent="Widget.AppCompat.Button">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+
+    <style name="GenericButtonStyle.Quantity">
+        <item name="android:layout_width">@dimen/order_quantity_button_size</item>
+        <item name="android:layout_height">@dimen/order_quantity_button_size</item>
+    </style>
+
+    <style name="fab_button" parent="AppTheme">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignParentBottom">true</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_margin">@dimen/margin_15dp</item>
+    </style>
+
+    <style name="PartImageSmallStyle" parent="AppTheme">
+        <item name="android:layout_width">@dimen/part_image_size_small</item>
+        <item name="android:layout_height">@dimen/part_image_size_small</item>
+        <item name="android:scaleType">centerCrop</item>
+        <item name="android:layout_margin">@dimen/margin_5dp</item>
+    </style>
+
+    <style name="LinearLayout_horizontal" parent="AppTheme">
+        <item name="android:layout_width">@dimen/weight_width</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <style name="part_name_text" parent="AppTheme">
+        <item name="android:layout_width">@dimen/weight_width</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:padding">@dimen/padding_top_5dp</item>
+        <item name="android:textSize">@dimen/mediumTextSize</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+
+    <style name="GenericEditTextStyle" parent="AppTheme">
+        <item name="android:layout_width">@dimen/weight_width</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:inputType">text</item>
+        <item name="android:imeOptions">actionNext</item>
+        <item name="android:layout_weight">2</item>
+        <item name="android:textSize">@dimen/smallTextSize</item>
+    </style>
+
+    <style name="QuantityTextStyle" parent="AppTheme">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">@dimen/padding_10dp</item>
+        <item name="android:layout_marginRight">@dimen/padding_10dp</item>
+        <item name="android:padding">@dimen/padding_top_5dp</item>
+        <item name="android:textSize">@dimen/smallTextSize</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="Layout_Linear_Template_Horizontal" parent="AppTheme">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:paddingBottom">@dimen/padding_top_5dp</item>
+        <item name="android:paddingTop">@dimen/padding_top_5dp</item>
+    </style>
+
+    <style name="EmptyViewStyleText" parent="AppTheme">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textSize">@dimen/mediumTextSize</item>
+    </style>
+
+    <style name="EmptyViewIconStyle" parent="AppTheme">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:padding">@dimen/padding_top_5dp</item>
+    </style>
+</resources>

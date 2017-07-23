@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/list_background"
+    tools:context="io.github.timladenov.autoinventory.DetailActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/padding_top_5dp">
+
+        <ImageView
+            android:id="@+id/part_picture"
+            android:layout_width="@dimen/part_image_size"
+            android:layout_height="@dimen/part_image_size"
+            android:layout_gravity="center"
+            android:background="@android:color/transparent"
+            android:contentDescription="@string/info_photo"
+            android:scaleType="centerCrop"
+            android:src="@drawable/insert_image" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/spacer_color" />
+
+        <LinearLayout
+            style="@style/Layout_Linear_Template_Horizontal"
+            android:orientation="vertical">
+
+            <LinearLayout style="@style/Layout_Linear_Template_Horizontal">
+
+                <TextView
+                    style="@style/part_name_text"
+                    android:text="@string/part_name" />
+
+                <EditText
+                    android:id="@+id/part_name"
+                    style="@style/GenericEditTextStyle"
+                    android:hint="@string/part_name_hint"
+                    android:inputType="textCapCharacters" />
+
+            </LinearLayout>
+
+            <LinearLayout style="@style/Layout_Linear_Template_Horizontal">
+
+                <TextView
+                    style="@style/part_name_text"
+                    android:text="@string/part_data" />
+
+                <EditText
+                    android:id="@+id/part_data"
+                    style="@style/GenericEditTextStyle"
+                    android:hint="@string/part_data_hint"
+                    android:inputType="textCapSentences" />
+
+            </LinearLayout>
+
+            <LinearLayout style="@style/Layout_Linear_Template_Horizontal">
+
+                <TextView
+                    style="@style/part_name_text"
+                    android:text="@string/part_type" />
+
+                <LinearLayout
+                    android:layout_width="@dimen/weight_width"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:orientation="vertical">
+
+                    <Spinner
+                        android:id="@+id/type_spinner"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:entries="@array/array_type_options"
+                        android:spinnerMode="dropdown" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout style="@style/Layout_Linear_Template_Horizontal">
+
+                <TextView
+                    style="@style/part_name_text"
+                    android:text="@string/part_fits" />
+
+                <EditText
+                    android:id="@+id/fits_car"
+                    style="@style/GenericEditTextStyle"
+                    android:hint="@string/part_fits_hint"
+                    android:inputType="textCapWords" />
+
+            </LinearLayout>
+
+            <LinearLayout style="@style/Layout_Linear_Template_Horizontal">
+
+                <TextView
+                    style="@style/part_name_text"
+                    android:text="@string/part_price" />
+
+                <EditText
+                    android:id="@+id/part_price"
+                    style="@style/GenericEditTextStyle"
+                    android:hint="@string/part_price_hint"
+                    android:imeOptions="actionDone"
+                    android:inputType="number|numberDecimal" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/order_layout"
+                style="@style/Layout_Linear_Template_Horizontal">
+
+                <TextView
+                    style="@style/part_name_text"
+                    android:text="@string/part_stock" />
+
+                <LinearLayout
+                    android:layout_width="@dimen/weight_width"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/dec_part_quantity"
+                        style="@style/GenericButtonStyle.Quantity"
+                        android:text="@string/decrement_stock" />
+
+                    <TextView
+                        android:id="@+id/part_quantity"
+                        style="@style/QuantityTextStyle"
+                        android:text="@string/part_quantity_hint" />
+
+                    <Button
+                        android:id="@+id/add_part_quantity"
+                        style="@style/GenericButtonStyle.Quantity"
+                        android:text="@string/increment_stock" />
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/order_button_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/spacer_color" />
+
+            <Button
+                android:id="@+id/part_order_button"
+                style="@style/GenericButtonStyle"
+                android:layout_gravity="center"
+                android:text="@string/place_order" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/spacer_color" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

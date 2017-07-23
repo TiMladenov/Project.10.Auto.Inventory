@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/list_background"
+    tools:context="io.github.timladenov.autoinventory.MainActivity">
+
+    <ListView
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent" />
+
+    <RelativeLayout
+        android:id="@+id/empty_layout_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:paddingTop="@dimen/margin_5dp">
+
+        <ImageView
+            style="@style/EmptyViewIconStyle"
+            android:layout_below="@+id/empty_view_text_subtitle"
+            android:contentDescription="@string/add_icon"
+            android:src="@drawable/ic_create"
+            android:tint="@color/color_black" />
+
+        <TextView
+            android:id="@+id/empty_view_text"
+            style="@style/EmptyViewStyleText"
+            android:text="@string/empty_view_message"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/empty_view_text_subtitle"
+            style="@style/EmptyViewStyleText"
+            android:layout_below="@+id/empty_view_text"
+            android:paddingTop="@dimen/padding_top_5dp"
+            android:text="@string/empty_view_message_2" />
+
+    </RelativeLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        style="@style/fab_button"
+        android:src="@drawable/ic_create"
+        android:tint="@color/spacer_color" />
+
+</RelativeLayout>

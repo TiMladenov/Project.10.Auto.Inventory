@@ -1,0 +1,98 @@
+<resources>
+    <string name="app_name">Auto Inventory</string>
+
+    <string name="warning_fill_information">Please fill in all fields, including add an image</string>
+    <string name="warning_enter_part_name">Please enter part name</string>
+    <string name="warning_enter_value">Enter a value</string>
+    <string name="warning_negative_quantity">Quantity cannot be negative. \nPlease order item.</string>
+    <string name="warning_limit_quantity">Part item quantity cannot be more than 20.</string>
+    <string name="warning_out_of_stock">Part item out of stock, please reorder</string>
+    <string name="warning_no_items">Cannot order 0 parts. Place stock request.</string>
+
+    <string name="message_error_saving_part">There was an error while saving the part</string>
+    <string name="message_error_updating_part">There was an error while updating the part</string>
+    <string name="message_updated_part">Successfully updated part properties</string>
+    <string name="message_saved_part">Successfully saved part</string>
+    <string name="message_part_delete_fail">The part could not be deleted</string>
+    <string name="message_part_deleted">The part has been successfully deleted</string>
+
+    <string name="options_unknown">Unknown</string>
+    <string name="options_interior">Interior</string>
+    <string name="options_exterior">Exterior</string>
+    <string name="options_suspension">Suspension</string>
+    <string name="options_engine">Engine</string>
+    <string name="options_gearbox">Gearbox</string>
+    <string name="options_ac">Air Cond.</string>
+    <string name="options_electrical">Electrical</string>
+    <string name="unknown_type">Unknown</string>
+
+    <string-array name="array_type_options">
+        <item>@string/options_unknown</item>
+        <item>@string/options_interior</item>
+        <item>@string/options_exterior</item>
+        <item>@string/options_suspension</item>
+        <item>@string/options_engine</item>
+        <item>@string/options_gearbox</item>
+        <item>@string/options_ac</item>
+        <item>@string/options_electrical</item>
+    </string-array>
+
+    <string name="add_part">Add Part</string>
+    <string name="edit_part">Edit Part</string>
+
+    <string name="part_name">Part name:</string>
+    <string name="part_name_hint">Enter the name of the part</string>
+    <string name="part_data">Part description:</string>
+    <string name="part_data_hint">Enter the description of the par</string>
+    <string name="part_type">Type:</string>
+    <string name="part_fits">Part fits on:</string>
+    <string name="part_fits_hint">On which cars does the part fit</string>
+    <string name="part_price">Price:</string>
+    <string name="part_price_hint">Enter the price as decimal, in EUR</string>
+    <string name="part_stock">Part stock:</string>
+    <string name="part_in_stock">In stock:</string>
+    <string name="part_price_eur">Price EUR:</string>
+    <string name="decrement_stock">-</string>
+    <string name="increment_stock">+</string>
+    <string name="place_order">Order</string>
+    <string name="part_quantity_hint">20</string>
+    <string name="sell_button">Sell</string>
+
+    <string name="order_supplier_email_subject_1">Part order for\t</string>
+    <string name="order_supplier_email_subject_2">Part order &#8230;</string>
+    <string name="order_supplier_email_body">Dear Sir or Madam,\nI would like to order &#8230;</string>
+    <string name="order_supplier_email">mailto: example_supplier@gmail.com</string>
+
+    <string name="placeholder_img">android.resource://io.github.timladenov.autoinventory/drawable/insert_image</string>
+    <string name="selection">Select part Picture</string>
+
+    <string name="no_name_provided">No Name Provided</string>
+    <string name="out_of_stock">No</string>
+    <string name="in_stock">Yes</string>
+
+    <string name="info_photo">Picture of the part.</string>
+    <string name="add_icon">Image for adding a new item.</string>
+    <string name="confirmation_window_1">Your changes will not be applied. Confirm exit?</string>
+    <string name="confirmation_window_quit">Quit</string>
+    <string name="confirmation_window_stay">Remain here</string>
+    <string name="confirmation_delete_part">Are you sure that you want to delete this part?</string>
+    <string name="confirmation_delete_part_yes">Yes</string>
+    <string name="confirmation_delete_part_no">No</string>
+    <string name="confirmation_delete_all_parts">Are you sure that you want to delete all parts?</string>
+    <string name="confirmation_all_parts_deleted">All listed parts were deleted</string>
+    <string name="confirmation_error_delete_parts">There was an error when deleting all parts</string>
+    <string name="confirmation_wrong_value_type">Wrong value type was entered</string>
+    <string name="confirmation_delete_all">Remove all part items</string>
+
+    <string name="part_save">Save</string>
+    <string name="part_delete">Delete</string>
+
+    <string name="example_part_name">Braking pad kit</string>
+    <string name="example_part_fits">Citroen C3, C4, C5; Peugeot 508</string>
+    <string name="example_part_data">Very durable original TRW braking pads, guaranteed silent
+    and optimal operation under any conditions. 2 years warranty.</string>
+    <string name="example_enter_data">Insert example part</string>
+
+    <string name="empty_view_message">No part data available.</string>
+    <string name="empty_view_message_2">Click on Add button to add part item.</string>
+</resources>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorAccent">#4caf50</color>
+    <color name="colorPrimary">#a5d6a7</color>
+    <color name="colorPrimaryDark">#2e7d32</color>
+    <color name="list_background">#c8e6c9</color>
+    <color name="spacer_color">@android:color/white</color>
+
+    <color name="yes_quantity">@android:color/holo_green_dark</color>
+    <color name="no_quantity">@android:color/holo_red_light</color>
+
+    <color name="color_gray">#9E9E9E</color>
+    <color name="color_black">@android:color/black</color>
+</resources>
